@@ -1,124 +1,20 @@
 ---
 title: "Resources | Essential Insights for Business Owners"
-description: " Unlock valuable knowledge on all things internet with our curated collection of blog posts. From SEO fundamentals to website optimization, empower yourself with essential insights tailored for business success online."
+description: " Unlock valuable knowledge on all things internet with our curated collection of blog posts. From SEO
+fundamentals to website optimization, empower yourself with essential insights tailored for business success online."
 permalink: "resources/{{ pagination.pageNumber + 1 }}/"
 eleventyNavigation:
-    key: Resources
-    order: 6
+key: Resources
+order: 6
 pagination:
-  data: collections.resources
-  size: 9	
-  reverse: true
-  alias: posts
+data: collections.resources
+size: 9
+reverse: true
+alias: posts
 ---
 
 {% extends "layouts/base.html" %} {% block head %}
-<link rel="stylesheet" href="/css/resources.css" />
-<link rel="preload" href="/assets/images/resources-hero-small.webp" as="image">
-<link rel="preload" href="/assets/images/resources-hero.webp" as="image">
+
 {% endblock %} {% block body %}
-<section class="ps__heroBanner ps__resourcesHero">
-	<picture>
-        <source media="(min-width: 600px)" srcset="/assets/images/resources-hero.webp">
-        <source srcset="/assets/images/resources-hero-small.webp">
-        <img class="ps__heroBanner--image" src="/assets/images/resources-hero-small.webp"
-            alt="People working together" aria-hidden="true">
-    </picture>
-    <div class="ps__heroBanner--decorations">
-        {% include 'components/rotating-circle.html' %}
-        <div class="ps__heroBanner--decorations__right-shape ps__bounceRight" aria-hidden="true">
-            <svg class="decoration__shape-1" xmlns="http://www.w3.org/2000/svg" width="409" height="639"
-                viewBox="0 0 409 639" fill="none">
-                <path d="M600.4 790L0 0H142.2L750.5 790H600.4Z"></path>
-            </svg>
-            <svg class="decoration__shape-2" xmlns="http://www.w3.org/2000/svg" width="266" height="254"
-                viewBox="0 0 266 254" fill="none">
-                <path d="M457.7 405H307.8L-0.000152588 0H149.85L457.7 405Z"></path>
-            </svg>
-        </div>
-    </div>
-    <div class="ps__heroBanner--xlDecoration">
-        <p>Web development &amp; consulting</p>
-    </div>
-    <div class="ps__heroBanner--info">
-        <div class="ps__heroBanner--decorations__circle ps__bounceBottom"></div>
-        <h1>Explore Our Resources</h1>
-        <div>
-            <span class="ps__arrow-up ps__bounceRight"></span>
-            <p class="ps__breadcrumbs"><a href="/" aria-label="back to the home page">Home</a> / <span
-                    class="ps__breadcrumb--last">Resources</span></p>
-        </div>
-    </div>
-    <div class="ps__heroBanner--smDecoration">
-        <div class="scroll-downs">
-            <div class="mousey">
-                <div class="scroller"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="ps__resourcesContent">
-	<div class="container">
-		{% if collections.resources | length == 0 %}
-		<p>No recent posts</p>
-		{% else %}
-
-
-		<div class="ps__resourcesContent--container">
-			{% for post in pagination.items %}
-			<article class="ps__resourcesArticle">
-				<a href="{{ post.url }}" aria-label="read more about {{ post.data.title }}">
-					<div class="ps__latestBlogsSection--article__content">
-						<picture class="ps__latestBlogsSection--article__mainImage">
-							<img src="{{ post.data.thumbnail }}" alt="{{ post.data.imageAlt }}" width="400" height="300"
-								decoding="async" />
-						</picture>
-						<div>
-							<span>{{ post.data.date | postDate }}</span>
-							<h3 class="ps__latestBlogsSection--article__content__title">
-								{{ post.data.title }}
-							</h3>
-						</div>
-					</div>
-				</a>
-
-			</article>
-			{% endfor %}
-		</div>
-		{% if pagination.pages.length > 1 %}
-		<div class="ps__resourcesContent--pagination">
-			<div>
-				{% if pagination.href.previous %}
-
-				<a class="ps__pagination--prev" href="{{ pagination.href.previous }}"><svg
-						xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none" aria-hidden="true">
-						<path d="M7.5 25.0002L7.5 1.00024M7.5 1.00024L1 7.78285M7.5 1.00024L14 7.78285"
-							stroke="#1D1D1D"></path>
-					</svg>Previous</a>
-				{% endif %}
-			</div>
-
-
-
-			<div><span class="currentPage">{{ pagination.pageNumber + 1 }}</span><span
-					class="pageSeparator">&nbsp;/&nbsp;</span><a href="{{ pagination.href.last }}"
-					class="ps__pagination--lastPage">{{ pagination.pages.length }}</a>
-			</div>
-
-
-
-			<div>{% if pagination.href.next %}<a class="ps__pagination--next" href="{{ pagination.href.next }}">Next <svg
-				xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none" aria-hidden="true">
-				<path d="M7.49023 0L7.49023 24M7.49023 24L0.990234 17.2174M7.49023 24L13.9902 17.2174"
-					stroke="#1D1D1D"></path>
-			</svg></a>{% endif %}</div>
-
-		</div>
-		{% endif %}
-
-		{% endif %}
-	</div>
-
-</section>
-
+<h2>Hello Resources</h2>
 {% endblock %}
