@@ -1,0 +1,177 @@
+@import './styles';
+
+.ps__sectionPortfolio {
+    background-color: $primary;
+    position: relative;
+
+    .ps__sectionPortfolio--wrapper {
+        position: relative;
+        z-index: 2;
+        .ps__sectionPortfolio--wrapper__title {
+            text-align: center;
+            margin-bottom: 2rem;
+            h2 {
+                text-transform: capitalize;
+                padding: 0.5rem 0;
+                color: #ffffff;
+            }
+
+            .ps__sectionSmallTitle {
+                justify-content: center;
+            }
+        }
+
+        .ps__sectionPortfolio--wrapper__card {
+            position: relative;
+            overflow: hidden;
+            font-size: 0px;
+            padding: 1rem;
+            width: fit-content;
+            margin: 0 auto;
+            .ps__sectionPortfolio--wrapper__card--image {
+                background-color: rgba(29, 29, 29, 0.7);
+                backdrop-filter: blur(10px);
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: grayscale(100%);
+                    transition: all 0.3s ease-in-out;
+                    border: 1px solid #ffffff;
+                    -webkit-mask: conic-gradient(
+                                from 180deg at top 1px right 1px,
+                                #0000 90deg,
+                                #000 0
+                            )
+                            var(--_i, 200%) 0 /200% var(--_i, 1px) border-box no-repeat,
+                        conic-gradient(
+                                at bottom 1px left 1px,
+                                #0000 90deg,
+                                #000 0
+                            )
+                            0 var(--_i, 200%) / var(--_i, 1px) 200% border-box
+                            no-repeat,
+                        linear-gradient(#000 0 0) padding-box no-repeat;
+                    transition: 0.3s, -webkit-mask-position 0.3s 0.3s;
+                    @include max-width(large) {
+                        max-height: 600px;
+                        width: 100%;
+                    }
+                    &:hover {
+                        filter: grayscale(0%);
+                        --_i: 100%;
+                        transition: 0.3s, -webkit-mask-size 0.3s 0.3s;
+                    }
+                }
+
+                &:hover {
+                    ~ .ps__sectionPortfolio--wrapper__card--info {
+                        h3 {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                        p {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                        div {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .ps__sectionPortfolio--wrapper__card--info {
+                pointer-events: none;
+                h3 {
+                    position: absolute;
+                    left: calc(1rem + 1px);
+                    bottom: calc(1rem + 100px);
+                    transform: translateX(100%);
+                    transition: transform 0.5s ease-in-out,
+                        opacity 0.5s ease-in-out;
+                    opacity: 0;
+                    color: #ffffff;
+                    padding: 0.5rem;
+                    background-color: $secondary;
+                    font-size: 1.4rem;
+                    max-width: calc(100% - 2rem - 1px);
+                }
+                p {
+                    position: absolute;
+                    left: calc(1rem + 1px);
+                    font-size: 1rem;
+                    bottom: calc(1rem + 60px);
+                    transform: translateX(100%);
+                    transition: transform 0.7s ease-in-out,
+                        opacity 0.5s ease-in-out;
+                    opacity: 0;
+                    width: 40%;
+                    text-align: center;
+                    color: #ffffff;
+                    background-color: $accent1;
+                    padding: 0.5rem;
+                }
+                div {
+                    position: absolute;
+                    right: calc(1rem + 1px);
+                    top: calc(1rem + 1px);
+                    background-color: $secondary;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: opacity 0.5s ease-in-out;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .ps__sectionPortfolio--decorations {
+        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        @include max-width(medium) {
+            flex-direction: column-reverse;
+        }
+        .ps__sectionPortfolio--decorations__shape-one {
+            animation: bounce-right 1s infinite alternate;
+            position: relative;
+            right: -300px;
+            @include max-width(medium) {
+                right: 0;
+            }
+        }
+        .ps__sectionPortfolio--decorations__shape-two {
+            animation: bounce-left 1s infinite alternate;
+            position: relative;
+            left: -300px;
+            @include max-width(medium) {
+                left: 0;
+            }
+        }
+        .ps__sectionPortfolio--decorations__shape-two,
+        .ps__sectionPortfolio--decorations__shape-one {
+            path {
+                &:first-child,
+                &:nth-child(2) {
+                    fill: #ffffff;
+                    fill-opacity: 0.03;
+                }
+                &:last-child {
+                    fill: $secondary;
+                }
+            }
+        }
+    }
+}

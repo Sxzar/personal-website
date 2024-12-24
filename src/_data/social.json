@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/",
+        "icon": "instagram"
+    },
+    {
+        "title": "Facebook",
+        "url": "https://www.facebook.com/",
+        "icon": "facebook"
+    },
+    {
+        "title": "Youtube",
+        "url": "https://www.youtube.com/",
+        "icon": "youtube"
+    },
+    {
+        "title": "Github",
+        "url": "https://github.com/Sxzar",
+        "icon": "github"
+    }
+]

@@ -1,0 +1,79 @@
+{
+    "title" : "We take great pride in empowering businesses like yours to succeed online.",
+    "description": "See what our satisfied clients have to say about their experience with us",
+    "data" : [
+        {
+            "title": "A Seamless Experience",
+            "description": "Working with Stefan from Sxzar was a breeze. The personalized approach, from discussing branding to delivering a polished website in under a week, truly impressed me. The design captured my vision perfectly.",
+            "rating": "5",
+            "image": "emily",
+            "author": "Emily J.",
+            "date": "2022-03-12"
+        },
+        {
+            "title": "Good Value",
+            "description": "The fixed packages are comprehensive and value-packed. No hidden surprises—just a clear understanding of what you're getting, making the decision-making process smooth and straightforward.",
+            "rating": "5",
+            "image": "marius",
+            "author": "Marius L.",
+            "date":"2022-07-10"
+        },
+       
+        {
+            "title": "A good deal",
+            "description": "The Monthly Online Presence Package by Sxzar transformed my business. A professionally designed website, coupled with continuous support, updates, and analytics, has boosted my online visibility tremendously.",
+            "rating": "5",
+            "image": "raluca",
+            "author": "Raluca P.",
+            "date":"2023-02-14"
+        },
+        {
+            "title": "Thank you",
+            "description": "What started as a small coffee shop website turned into a multi-location success story, thanks to Sxzar. Stefan's work not only met but exceeded my expectations, propelling my business to new heights.",
+            "rating": "5",
+            "image": "ayse",
+            "author": "Ayşe A.",
+            "date":"2023-03-01"
+        },
+        {
+            "title": "An affordable solution",
+            "description": "Choosing Sxzar's Monthly Package was a game-changer for my business. Stefan's ongoing partnership, regular updates, and top-notch support are invaluable for long-term success of my bakery.",
+            "rating": "5",
+            "image": "andrej",
+            "author": "Andrej P.",
+            "date":"2023-03-21"
+        },
+        {
+            "title": "A Partner in Success",
+            "description": "Stefan is not just a web developer; he's a partner in my business's success. His unwavering commitment to understanding my needs and delivering results is a testament to his dedication.",
+            "rating": "5",
+            "image": "alessia",
+            "author": "Alessia E.",
+            "date":"2023-05-04"
+        },
+        {
+            "title": "Exceptional Results",
+            "description": "Stefan's efficiency and expertise are the backbone of Sxzar's exceptional results. From the first consultation to the final product, the journey was seamless and impressive.",
+            "rating": "5",
+            "image": "istvan",
+            "author": "István N.",
+            "date":"2023-05-04"
+        },
+        {
+            "title": "Exceeding Expectations",
+            "description": "Stefan's professionalism shines even in the face of differing opinions. His ability to find common ground and deliver exceptional design eliminates the usual back-and-forth, making the process smooth.",
+            "rating": "5",
+            "image": "kevin",
+            "author": "Kevin T.",
+            "date":"2022-11-24"
+        },
+        {
+            "title": "Best Investment",
+            "description": "Sxzar's Monthly Package goes beyond design—it's a recipe for sustained success. Stefan's commitment to continuous improvement keeps my website at the forefront of the digital landscape",
+            "rating": "5",
+            "image": "isabella",
+            "author": "Isabella R.",
+            "date":"2022-11-24"
+        }
+    ]
+}

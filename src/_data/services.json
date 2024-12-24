@@ -1,0 +1,148 @@
+{
+    "title": "Our Services",
+    "detailed": [
+        {   
+            "id": "web-design",
+            "name": "Web Design",
+            "title": "Experience Web Design & Development with a Refreshing Approach",
+            "subtitle": "Craftsmanship & Precision",
+            "description": "<p>What makes us <b>stand out</b> in the ever-evolving world of web development is our <b>dedication</b> to <b>craftsmanship</b> and <b>precision</b>. Unlike others who rely on pre-made tools like WordPress or frameworks, we take a unique approach - every line of code is meticulously <b>crafted by hand</b>.</p><p>Why does this matter to you? Because it means <b>unparalleled control</b> over your website's design and functionality. By avoiding bulky templates and messy code, we ensure your website runs <b>lightning-fast</b>, providing users with a <b>seamless</b> and <b>stunning</b> experience.</p><p>Let's talk about <b>performance</b>. Handcrafted websites consistently <b>outshine</b> their WordPress and drag-and-drop counterparts. Why settle for mediocrity when you can have <b>excellence</b> right at your fingertips—and at a fraction of the cost? With us, you'll receive a website that not only <b>catches the eye</b> but also <b>delivers</b> results without burning a hole in your pocket.</p>",
+            "packages": [
+                {
+                    "name": "Bronze",
+                    "icon": "/assets/svgs/services/bronze.svg",
+                    "price": 50,
+                    "timeFrame": "/month",
+                    "included": [
+                        "One Page",
+                        "Includes Hosting",
+                        "2 Hours of Changes / Month",
+                        "24/7 Support",
+                        "Lifetime Updates"
+                    ],
+                    "spots": 3
+                },
+                {
+                    "name": "silver",
+                    "icon": "/assets/svgs/services/silver.svg",
+                    "price": 250,
+                    "discount": 100,
+                    "timeFrame": "/month",
+                    "included": [
+                        "5 Pages",
+                        "Includes Hosting",
+                        "Unlimited Changes",
+                        "24/7 Support",
+                        "Lifetime Updates"
+                    ],
+                    "spots": 4
+                },
+                {
+                    "name": "gold",
+                    "icon": "/assets/svgs/services/gold.svg",
+                    "price": 400,
+                    "timeFrame": "/month",
+                    "included": [
+                        "10 Pages",
+                        "Includes Hosting",
+                        "Unlimited Changes",
+                        "SEO-Optimized Blog Post (750 Words)",
+                        "Logo Design",
+                        "24/7 Priority Support",
+                        "Lifetime Updates"
+                    ],
+                    "spots": -1
+                }
+            ]
+        },
+        {
+            "id": "website-maintenance",
+            "name": "Lifetime Updates",
+            "title": "Unlock Continuous Enhancement and Security for Your Online Presence",
+            "subtitle" :"Forever Up-to-Date",
+            "description": "<p>We understand the <b>importance</b> of keeping your website <b>up-to-date</b> and in line with the <b>latest</b> standards. With Google regularly updating its search algorithm and web accessibility guidelines evolving, it's <b>crucial</b> to stay <b>ahead of the curve</b>. That's why we offer <b>lifetime updates</b> to ensure your website remains <b>current</b> and <b>competitive</b>.</p><p>Let us handle the updates and optimizations while you focus on <b>growing your brand</b> and <b>delighting your customers</b>.</p>",
+            "packages": [
+                {
+                    "name": "Design Refresh Guarantee",
+                    "timeFrame": "Included with All Packages",
+                    "description": "Experience peace of mind knowing that whenever you wish for a new design, we'll reconstruct your website with a fresh look, all without any additional charges."
+                },
+                {
+                    "name": "Accessibility Assurance",
+                    "timeFrame": "Included with All Packages",
+                    "description": "We'll ensure your website is accessible to all users, including those with disabilities, by adhering to the latest web accessibility standards."
+                },
+                {
+                    "name": "Search Engine Maintenance",
+                    "timeFrame": "Included with All Packages",
+                    "description": "We'll keep your website optimized for search engines, ensuring it remains competitive and visible to your target audience."
+                }
+            ]
+        },
+        {   
+            "id": "seo",
+            "name": "Search Engine Optimization",
+            "title": "Boost Your Online Visibility with Effective Strategies",
+            "subtitle": "SEO Techniques",
+            "description": "<p>When it comes to getting noticed online, we understand that <b>simplicity</b> and <b>effectiveness</b> are key. While some may promise quick fixes to skyrocket your website to the top of Google, the truth is, real <b>success</b> takes <b>time</b> and the <b>right approach</b>.</p><p>At our service, we're dedicated to helping your business <b>stand out</b> in today's <b>digital world</b>. Here's how we do it:</p>",
+            "list": [
+                {
+                    "title": "Smart Content Creation",
+                    "description": "We create content that speaks directly to your customers and includes the words they use when searching online. By doing this, we help your website rank higher in Google searches, making it easier for people to find you."
+                },
+                {
+                    "title": "Mobile-Friendly Design",
+                    "description": "More and more people are using their phones to browse the internet. That's why we make sure your website looks great and works perfectly on all devices, from smartphones to tablets to computers. This way, you never miss out on potential customers, no matter how they're searching."
+                },
+                {
+                    "title": "Easy-to-Understand Code",
+                    "description": "Behind the scenes, we tidy up the code that powers your website. This helps search engines like Google understand what your website is about, making it more likely to show up when people search for businesses like yours."
+                },
+                {
+                    "title": "Browser Compatibility Assurance",
+                    "description": "Your website will be compatible with all major web browsers, ensuring a seamless experience for users regardless of their browser preference. With our designs, your website will maintain its functionality and aesthetic appeal across various browsers, including Chrome, Firefox, Safari, and Edge."
+                }
+            ],
+            "conclusion": "<p>In short, while it may be tempting to go for quick results, building a <b>strong online presence</b> takes time and the right strategies. With our expertise in SEO tailored for businesses like yours, we'll help you <b>climb the ranks</b> on Google and reach more customers than ever before.</p>"
+        },
+        {
+            "id": "content-creation",
+            "name": "Content Creation",
+            "title": " Professionally Written SEO-Optimized Blog Posts to Boost Your Business",
+            "subtitle": "Expert Content Creation",
+            "description": "<p>The key to <b>standing out</b> and attracting <b>customers</b> to your website is having captivating and informative content. With our expert content creation service, we offer professionally written, SEO-optimized <b>blog posts</b> tailored specifically to elevate your business's visibility and engagement.</p><p>Why invest in content creation? It's simple - <b>quality content</b> drives traffic to your website, improves your search engine <b>rankings</b>, and keeps your audience <b>engaged</b>. Our SEO-optimized blog posts, each comprising 750 carefully crafted words, are designed to resonate with your target audience while strategically incorporating relevant keywords to enhance your website's visibility on search engines like <b>Google</b>.</p><p>Don't let your website gather dust in the vast expanse of the internet. Let us help you <b>tell your story</b>, connect with your audience, and <b>unlock the full potential</b> of your digital presence.</p>",
+            "packages": [
+                {
+                    "name": "SEO-Optimized Article",
+                    "icon": "/assets/svgs/services/blog.svg",
+                    "price": 100,
+                    "timeFrame": "/Blog Post",
+                    "included": [
+                        "750 Word Post",
+                        "Professionally Written Content",
+                        "SEO Optimization",
+                        "Tailored to Your Brand"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "logo-design",
+            "name": "Logo Design",
+            "title": "Tailored Designs to Elevate Your Business Identity",
+            "subtitle": "Creative Solutions",
+            "description": "<p>Step into the <b>spotlight</b> with a captivating <b>logo</b> that speaks volumes about your <b>brand</b>.</p><p>Our expert <b>graphic design team</b> is here to bring your vision to life, whether you're <b>refining</b> an existing logo or embarking on a <b>brand-new journey</b> of identity creation.</p><p>We understand that your logo is more than just an <b>image</b>—it's the <b>cornerstone</b> of your brand's identity, and it deserves meticulous attention to detail. With our <b>tailored approach</b>, we'll work closely with you to understand your business, your values, and your aspirations. From there, we'll leverage our creative <b>expertise</b> to design a logo that resonates with your <b>target audience</b> and sets you apart from the competition.</p>",
+            "list": [
+                {
+                    "title": "Logo Design Packages from $300",
+                    "description": "Prices are subject to adjustment based on project complexity, duration, and revision requirements."
+                },
+                {
+                    "title": "Custom Social Media Graphics",
+                    "description": "Enhance your posts with unique custom graphics designed to captivate. Contact us for pricing and package options."
+                }
+            ],
+            "conclusion": "<p>With our logo design services, you'll have the confidence to showcase your <b>brand</b> with <b>pride</b>, knowing that it's backed by a <b>logo</b> that truly <b>represents</b> who you are and what you <b>stand for</b>.</p>"
+        }
+    ]
+}

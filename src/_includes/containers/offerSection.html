@@ -1,0 +1,214 @@
+<section class="ps__offerSection">
+	<div class="ps__container">
+		<div class="row">
+			<div class="ps__offerSection--descriptionContainer col-lg-6 col-xs-12">
+				<div class="ps__sectionSmallTitle">
+					<img src="/assets/svgs/sxzar-icon.svg" alt="sxzar icon" width="20" height="20" aria-hidden="true" />
+					<p>What we do</p>
+				</div>
+				<h2>
+					<span class="highlight">$0</span> Upfront Costs,
+					<s>$200</s>
+					<span class="offerPrice"></span>
+					per month, 12 Month Minimum Contract
+				</h2>
+				<p>
+					We are dedicated to offering <b>affordable solutions</b> specifically designed for small and
+					medium-sized businesses.
+				</p>
+				<!-- TODO: Change to next step after 5 seconds unless clicked -->
+				<div class="ps__offerSection--mainTabBox">
+					<ul class="ps__offerSection--mainTabBox__tabButtons">
+						<li data-tab="tab-planning-step">
+							<span>{{ offer.planning.title }}</span>
+						</li>
+						<li data-tab="tab-design-step">
+							<span>{{ offer.design.title }}</span>
+						</li>
+						<li data-tab="tab-building-step">
+							<span>{{ offer.development.title }}</span>
+						</li>
+						<li data-tab="tab-launch-step">
+							<span>{{ offer.launch.title }}</span>
+						</li>
+					</ul>
+					<div class="ps__offerSection--mainTabBox__tabContent">
+						<div id="tab-planning-step">
+							<p>
+								{{ offer.planning.description | safe}}
+							</p>
+							<div class="ps__step--points row">
+								{% for highlight in offer.planning.highlights %}
+								<div class="col-md-6 col-xs-12">
+									<h4>{{ highlight.title }}</h4>
+									<p>{{ highlight.description }}</p>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+						<div id="tab-design-step">
+							<p>{{ offer.design.description | safe }}</p>
+							<div class="ps__step--points row">
+								{% for highlight in offer.design.highlights %}
+								<div class="col-md-6 col-xs-12">
+									<h4>{{ highlight.title }}</h4>
+									<p>{{ highlight.description }}</p>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+						<div id="tab-building-step">
+							<p>{{ offer.development.description | safe }}</p>
+							<div class="ps__step--points row">
+								{% for highlight in offer.development.highlights %}
+								<div class="col-md-6 col-xs-12">
+									<h4>{{ highlight.title }}</h4>
+									<p>{{ highlight.description }}</p>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+						<div id="tab-launch-step">
+							<p>{{ offer.launch.description | safe }}</p>
+							<div class="ps__step--points row">
+								{% for highlight in offer.launch.highlights %}
+								<div class="col-md-6 col-xs-12">
+									<h4>{{ highlight.title }}</h4>
+									<p>{{ highlight.description }}</p>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-xs-12">
+				<div class="ps__offerSection--imageContainer">
+					<picture>
+						<source srcset="/assets/images/what-we-do.webp" type="image/webp" />
+						<img src="/assets/images/what-we-do.jpg" alt="offer section image" decoding="async"
+							aria-hidden="true" />
+					</picture>
+					<div class="ps__offerSection--imageContainer__icon-wrap" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="512" height="512" x="0" y="0" viewBox="0 0 682.667 682.667"
+							style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+							<g>
+								<defs>
+									<clipPath id="a" clipPathUnits="userSpaceOnUse">
+										<path d="M0 512h512V0H0Z" fill="#ffffff" opacity="1" data-original="#000000"
+											class=""></path>
+									</clipPath>
+								</defs>
+								<g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)">
+									<path
+										d="M0 0h-230.004c-16.568 0-30-13.432-30-30v-422c0-16.568 13.432-30 30-30h300c16.568 0 30 13.432 30 30v351.997z"
+										style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+										transform="translate(336.004 497)" fill="none" stroke="#ffffff"
+										stroke-width="30" stroke-linecap="round" stroke-linejoin="round"
+										stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+										data-original="#000000" opacity="1" class=""></path>
+									<path d="M0 0v-100h100Z"
+										style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+										transform="translate(336 497)" fill="none" stroke="#ffffff" stroke-width="30"
+										stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+										stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1"
+										class=""></path>
+									<path d="m0 0 50 60-50 60"
+										style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+										transform="translate(326 156)" fill="none" stroke="#ffffff" stroke-width="30"
+										stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+										stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1"
+										class=""></path>
+									<path d="m0 0-50 60 50 60"
+										style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+										transform="translate(186 156)" fill="none" stroke="#ffffff" stroke-width="30"
+										stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+										stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1"
+										class=""></path>
+									<path d="m0 0 40 120"
+										style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+										transform="translate(236 156)" fill="none" stroke="#ffffff" stroke-width="30"
+										stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+										stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1"
+										class=""></path>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="ps__offerSection--imageContainer__border-box">
+						{% for i in range(0, 10) %}
+						<div></div>
+						{% endfor %}
+					</div>
+					<div class="ps__offerSection--imageContainer__shape-box">
+						{% for i in range(0, 7) %}
+						<div></div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	let undiscountedPrice = `$250`;
+	let discountedPrice = `$150`;
+	let defaultPrice = `$150`;
+	let defaultDiscount = "$1200";
+	let countryDiscount = "$1200";
+
+
+	let offerPrice = document.querySelectorAll(".offerPrice");
+	let usersCountry = document.querySelectorAll(".userCountry");
+	let dicountFields = document.querySelectorAll(".discount-value");
+	for (let price of offerPrice) {
+		price.innerHTML = defaultPrice;
+	}
+	for (let field of dicountFields) {
+		field.innerHTML = defaultDiscount;
+	}
+
+	// Get all the li elements inside ps__offerSection--mainTabBox__tabButtons
+	var tabs = document.querySelectorAll('.ps__offerSection--mainTabBox__tabButtons li');
+
+	// Get all the div elements that could be shown or hidden
+	var divs = document.querySelectorAll('[id^="tab-"]');
+
+	// Set the first li element as the default active one
+	tabs[0].classList.add('active');
+
+	// Show the first div by default
+	divs[0].style.display = "block";
+
+	// Add a click event listener to each li
+	tabs.forEach(function (tab) {
+		tab.addEventListener('click', function () {
+			// Remove the active class from all li elements
+			tabs.forEach(function (tab) {
+				tab.classList.remove('active');
+			});
+
+			// Hide all divs
+			divs.forEach(function (div) {
+				div.style.display = "none";
+			});
+
+			// Add the active class to the clicked li
+			this.classList.add('active');
+
+			// Get the value of the data-tab attribute of the clicked li
+			var id = this.getAttribute('data-tab');
+
+			// Find the div with the same id
+			var div = document.getElementById(id);
+
+			// Change the display style of the div
+			if (div.style.display === "none") {
+				div.style.display = "block";
+			} else {
+				div.style.display = "none";
+			}
+		});
+	});
+</script>

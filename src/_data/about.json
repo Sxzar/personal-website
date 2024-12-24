@@ -1,0 +1,44 @@
+{   
+    "sectionSubtitle": "About Sxzar",
+    "sectionTitle": "Meet Your Developer",
+    "image": "about",
+    "sectionDescription": [
+        "Hey there! I'm Stefan, and my mission is straightforward—to help businesses like yours thrive online.",
+        "When I first dipped my toes into web development, I encountered the same obstacles: expensive services and subpar builder options. Surprisingly, not much has changed since then!",
+        "I get it - it's frustrating to seek quality without draining your budget. That's why I'm here with a solution. With my custom-coded websites that load in a flash, captivate search engines, and embody your brand's essence, I'm dedicated to making digital success accessible to every business."
+    ],
+    "description_long": [
+        "Hey there! I'm Stefan, the founder of <b>Sxzar Web Designs</b>, and I'm thrilled to embark on this journey <b>with you</b>.",
+        "Flashback to early 2017 when I kickstarted my career in web development with a <b>bold</b> vision — to empower businesses like yours to <b>thrive</b> online. But as I dove deeper into the industry, I couldn't ignore the stark contrast.",
+        "On one side, there were these high-priced services tailored for big corporations. On the flip side, generic website builders churned out cookie-cutter designs that lacked personality and performance.",
+        "This gap ignited a fire within me. I dreamed of a world where businesses of any size could have <b>custom websites</b> — ones that not only looked <b>amazing</b> but also <b>performed</b> like champs, all without breaking the bank.",
+        "At Sxzar, we're not about a massive team; we're about teamwork and expertise. My partner designer and I share a <b>passion</b> for creating <b>visually stunning</b> websites that truly reflect your brand.",
+        "Together, we painstakingly craft each website, ensuring <b>top-notch</b> performance, <b>blazing-fast</b> load times, and a <b>seamless</b> user experience. Whether it's a slick presentation site, a captivating portfolio, or a lead-generating business hub, we've got you covered.",
+        "But it doesn't stop there. I want to be more than just a service provider — I want to be your partner in <b>success</b>. Understanding your <b>brand</b>, <b>goals</b>, and <b>unique</b> selling points is key. With this knowledge, we tailor our solutions to fit your vision perfectly. Expect <b>transparency</b> and <b>collaboration</b> every step of the way.",
+        "And affordability? It's non-negotiable at Sxzar Web Designs. I firmly believe that <b>quality</b> web development should be within reach for all businesses. That's why we offer <b>budget-friendly</b> packages without sacrificing excellence.",
+        "So what are you waiting for? Let's team up at Sxzar Web Designs and unleash the potential waiting for you online. <b>Together</b>, we'll elevate <b>your business</b> to new heights!"
+    ],
+    "sectionQuoteTitle": "Always Choose the Best Service",
+    "sectionQuote": "I'm not here to pressure you into a decision today. What's important is that you're fully informed. A free consultation lets us explore if we're a good fit, without any immediate commitment.",
+    "features" : {
+        "title" : "Why Choose Sxzar Web Designs?",
+        "subtitle" : "Value over Volume",
+        "description" : "We focus intently on <b>tailoring</b> our services to meet the specific needs of every individual business, <b>customizing</b> content to accentuate its unique <b>qualities</b>. Our collaborative approach involves working closely with you to craft a website that not only meets but surpasses your <b>expectations</b>, guaranteeing your utmost <b>satisfaction</b>.<br /> And rest assured, if for any reason you're not completely satisfied, we're <b>committed</b> to working with you until you're <b>delighted</b> with the result.",
+        "data": [
+            {
+                "title": "Tailor-Made Content",
+                "description": "We craft distinct and captivating content that truly reflects your business. Because everyone has their own story!"
+            },
+            {
+                "title": "Top-Notch Customer Care",
+                "description": "No automated phone systems here - when you reach out for assistance, you'll connect directly with our lead developer, ensuring personalized support at your fingertips."
+            },
+            {
+                "title": "Unlimited Design Possibilities",
+                "description": "Design knows no bounds with us. We can mold it to suit your preferences. Total customization at your fingertips!"
+            }
+        ]
+    },
+    "pageTitle": "Empowering Your Online Success!",
+    "experience": "Over <br /><span id='psExpYears'></span> Years Experience"
+}

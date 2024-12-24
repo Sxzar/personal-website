@@ -1,0 +1,47 @@
+.ps__contactPage--form {
+    fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        legend {
+            font-size: clamp(1.75rem, 1.393rem + 0.952vw, 2.25rem);
+            padding: 0.5rem 0;
+            font-weight: 700;
+            span {
+                display: block;
+                color: #a0a1a6;
+                font-size: 1rem;
+                font-weight: 500;
+                padding: 0.5rem 0;
+            }
+        }
+        label {
+            padding: 0.5rem 0 0 0;
+            color: #a0a1a6;
+        }
+        input {
+            border: 1px solid #a0a1a6;
+            border-radius: 5px;
+            padding: 1rem;
+            width: 100%;
+            &:active, &:focus {
+                border: 1px solid $primary;
+            }
+        }
+        textarea {
+            border: 1px solid #a0a1a6;
+            border-radius: 5px;
+            padding: 1rem;
+            width: 100%;
+            &:active, &:focus {
+                border: 1px solid $primary;
+            }
+        }
+        button {
+            margin: 1rem 0;
+            width: fit-content;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+}

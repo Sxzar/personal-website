@@ -1,0 +1,30 @@
+{
+    "title": "Your digital journey starts here",
+    "description": "Why settle for a run-of-the-mill website that fades into the background? Stand out from the crowd with a website that boldly reflects your brand's identity and value. Let's transform your casual visitors into devoted customers and propel your business forward.",
+    "data" : [
+        {
+            "title": "Super-Fast Websites",
+            "description": "Your website loads <strong>instantly</strong>, keeping visitors happy and engaged.",
+            "image": "/assets/svgs/perks/super-fast-websites.svg",
+            "location": "/resources/how-faster-website-loading-times-can-supercharge-your-online-success/"
+        },
+        {
+            "title": "Top of Google",
+            "description": "<strong>Get noticed</strong> on Google and attract more visitors.",
+            "image": "/assets/svgs/perks/top-of-google.svg",
+            "location": "/resources/your-ticket-to-online-success/"
+        },
+        {
+            "title" : "Captivating Designs",
+            "description" : "Stand out with a website that reflects <strong>your brand's style</strong>.",
+            "image": "/assets/svgs/perks/captivating-designs.svg",  
+            "location": "/resources/the-power-of-brand-style-and-graphic-design/"
+        },
+        {
+            "title": "Turn Visitors into Customers",
+            "description": "Our websites guide <strong>visitors</strong> to become <strong>loyal customers</strong>.",
+            "image": "/assets/svgs/perks/convert-visitors.svg",
+            "location": "/resources/the-power-of-uxui-design-in-boosting-your-business/"
+        }
+    ]
+}

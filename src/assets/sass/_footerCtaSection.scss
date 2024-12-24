@@ -1,0 +1,63 @@
+@import './styles';
+
+.ps__footerCtaSection {
+    background-color: $secondary;
+    padding: 75px 0 65px 0;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    .container {
+        padding: 0 1rem;
+        align-items: center;
+        @include max-width(medium) {
+            text-align: center;
+        }
+        h2 {
+            color: #fff;
+            text-transform: capitalize;
+            line-height: 1.4;
+            @include max-width(medium) {
+                margin-bottom: 1rem;
+            }
+        }
+        .ps__button-5 {
+            &::before,
+            &::after {
+                border-bottom: 80px solid #fff;
+            }
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+    .ps__footerCtaSection__decorations-wrapper {
+        svg {
+            &:first-child {
+                position: absolute;
+                top: 0;
+                left: -20px;
+                z-index: -1;
+                animation: bounce-left 1s infinite alternate;
+                @include max-width(large) {
+                    bottom: 0;
+                    top: auto;
+                    left: -100px;
+                }
+                @include max-width(small) {
+                    left: -315px;
+                }
+            }
+            &:last-child {
+                position: absolute;
+                top: 0;
+                right: -20px;
+                z-index: -1;
+                animation: bounce-right 1s infinite alternate;
+
+                @include max-width(small) {
+                    right: -100px;
+                }
+            }
+        }
+    }
+}

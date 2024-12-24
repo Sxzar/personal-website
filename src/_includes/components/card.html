@@ -1,0 +1,22 @@
+<article class="ps__card reveal" itemscope itemtype="http://schema.org/Product">
+	{% if package.popular %}
+	<span class="ps__card--popular">{{ package.popular }}</span>
+	{% endif %}
+	<h3 itemprop="name">{{ package.title }}</h3>
+	{% if package.description %}
+	<p itemprop="description">{{ package.description }}</p>
+	{% endif %} {% if package.price %}
+	<span class="ps__card--price" itemprop="price">
+		{{ shop.currency_symbol }}{{ package.price }}
+	</span>
+	{% if package.time %}
+	<span>/{{ package.time }}</span>
+	{% endif %} {% endif %} {% if package.features %}
+	<ul class="ps__card--features">
+		{% for feature in package.features %}
+		<li><i></i>{{ feature }}</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+	<a class="ps__card--button" href="/contact">Get&nbsp;Started</a>
+</article>

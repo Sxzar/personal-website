@@ -1,0 +1,75 @@
+<section class="ps__videoSection">
+    <div class="ps__videoSection--wrapper container">
+        <div class="ps__videoSection--parallax">
+            <div class="ps__videoSection--parallax-container">
+                <span>VIDEO</span>
+                <div class="ps__videoSection--parallax__decoration" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="511" height="507" viewBox="0 0 511 507" fill="none">
+                        <path d="M294.473 289.888L249.064 348.996L349.708 507L430.223 506.727L294.473 289.888Z"></path>
+                        <path d="M352.176 85.8056H262.597L-2.244e-05 430.831L91.1614 428.856L352.176 85.8056Z"></path>
+                        <path d="M431.159 -18L31.9127 506.726H127.891L531 -18H431.159Z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="458" height="452" viewBox="0 0 458 452" fill="none">
+                        <path d="M253.99 187.337L214.823 136.335L301.632 0L371.077 0.235932L253.99 187.337Z"></path>
+                        <path d="M303.761 363.431H226.496L3.05176e-05 65.7228L78.6289 67.427L303.761 363.431Z"></path>
+                        <path d="M371.884 453L27.5255 0.236037H110.309L458 453H371.884Z"></path>
+                    </svg>
+                </div>
+                <div class="ps__videoSection--parallax__button">
+                    <div class="triangle-right"></div>
+                </div>
+            </div>
+        </div>
+        {% set modalClass = "ps__videoSection--modal" %}
+        {% set modalDescription %}
+        <div class="youtube" data-embed="3KY0dSa818g">
+            <div class="play-button" role="button" aria-label="click to play the video"></div>
+        </div>
+        {% endset %}
+        {% include 'components/modal.html' %}
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // lazy load youtube video
+        (function () {
+
+            var youtube = document.querySelectorAll(".youtube");
+
+            for (var i = 0; i < youtube.length; i++) {
+                var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/sddefault.jpg";
+                var image = new Image();
+                image.src = source;
+                image.alt = "Youtube video thumbnail";
+                image.loading = "lazy";
+                image.addEventListener("load", function () {
+                    youtube[i].appendChild(image);
+                }(i));
+
+                youtube[i].addEventListener("click", function () {
+
+                    var iframe = document.createElement("iframe");
+                    console.log(this)
+
+                    iframe.setAttribute("frameborder", "0");
+                    iframe.setAttribute("allowfullscreen", "");
+                    iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+
+                    this.innerHTML = "";
+                    this.appendChild(iframe);
+                    this.style.paddingTop = "49%";
+                });
+            }
+            ;
+
+        })();
+    });
+</script>
+<script>
+    let video = document.querySelector('.ps__videoSection--parallax');
+    let videoModal = document.querySelector('.ps__videoSection--modal');
+
+    video.addEventListener('click', function () {
+        videoModal.style.display = 'flex';
+    });
+</script>

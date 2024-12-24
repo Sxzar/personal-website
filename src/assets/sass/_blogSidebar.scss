@@ -1,0 +1,47 @@
+.ps__blog-featured-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ps__blog-sidebar {
+    .ps__blog-sidebar--wrapper  {
+        .ps__blog-feature {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            flex: 1;
+            max-width: 400px;
+            width: 100%;
+            .blog-featureImage {
+                margin-right: 10px;
+                filter: grayscale(100%);
+                transition: all 0.3s ease-in-out;
+                img {
+                    object-fit: cover;
+                }
+            }
+            span {
+                color: $accent2;
+            }
+            h3 {
+                padding: 0.5rem 0;
+                color: $primary;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.5;
+            }
+            &:hover {
+                scale: 1.05;
+                .blog-featureImage {
+                    filter: grayscale(0);
+                }    
+            }
+        }
+    }
+}

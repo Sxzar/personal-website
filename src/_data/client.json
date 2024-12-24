@@ -1,0 +1,17 @@
+{
+	"name": "Sxzar Web Designs",
+	"email": "contact.sxzar@gmail.com",
+	"phoneForTel": "+40728938335",
+	"phoneFormatted": "(+40) 728 938 335",
+	"address": {
+		"lineOne": "First Address Line",
+		"lineTwo": "Second Address Line",
+		"city": "Bucharest",
+		"state": "Romania",
+		"zip": "80206",
+		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+	},
+	"domain": "www.sxzar.com",
+	"shortDomain": "sxzar.com",
+	"description": "Pixel perfect websites for small businesses and individuals."
+}

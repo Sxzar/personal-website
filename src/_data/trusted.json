@@ -1,0 +1,57 @@
+{
+    "title": "Trusted by",
+    "rows": [
+        {
+            "title": "hostinger",
+            "logo": "hostinger.webp"
+        },
+        {
+            "title": "eleventy",
+            "logo": "eleventy.webp"
+        },
+        {
+            "title": "google",
+            "logo": "google.webp"
+        },
+        {
+            "title": "shopify",
+            "logo": "shopify.webp"
+        },
+        {
+            "title": "prestashop",
+            "logo": "prestashop.webp"
+        },
+        {
+            "title": "netlify",
+            "logo": "netlify.webp"
+        },
+        {
+            "title": "github",
+            "logo": "github.svg"
+        },
+        {
+            "title": "nunjucks",
+            "logo": "nunjucks.svg"
+        },
+        {
+            "title": "react",
+            "logo": "react.svg"
+        },
+        {
+            "title": "javascript",
+            "logo": "javascript.svg"
+        },
+        {
+            "title": "wordpress",
+            "logo": "wordpress.svg"
+        },
+        {
+            "title": "php",
+            "logo": "php.webp"
+        },
+        {
+            "title": "upwork",
+            "logo": "upwork.svg"
+        }
+    ]
+}

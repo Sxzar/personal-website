@@ -1,0 +1,161 @@
+---
+title: " About Us | Learn More About Our Mission and Values"
+description: " Discover the vision and passion driving our team as we strive to deliver cutting-edge digital solutions.
+Get to know the faces behind our brand and learn how our expertise and dedication can elevate your online presence."
+permalink: "/about/"
+eleventyNavigation:
+    key: About
+    order: 4
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/css/aboutPage.css" />
+<link rel="preload" href="/assets/images/business-people-shaking-hands-together.webp" as="image">
+<link rel="preload" href="/assets/images/business-people-shaking-hands-together-small.webp" as="image">
+
+<script defer src="/assets/js/reveal.js"></script>
+{% endblock %} {% block body %}
+<section class="ps__heroBanner ps__aboutHero">
+	<picture>
+		<source media="(min-width: 600px)" srcset="/assets/images/business-people-shaking-hands-together.webp">
+		<source srcset="/assets/images/business-people-shaking-hands-together-small.webp">
+		<img class="ps__heroBanner--image" src="/assets/images/business-people-shaking-hands-together-small.webp"
+			alt="People working together" aria-hidden="true">
+	</picture>
+	<div class="ps__heroBanner--decorations">
+		{% include 'components/rotating-circle.html' %}
+		<div class="ps__heroBanner--decorations__right-shape ps__bounceRight" aria-hidden="true">
+			<svg class="decoration__shape-1" xmlns="http://www.w3.org/2000/svg" width="409" height="639"
+				viewBox="0 0 409 639" fill="none">
+				<path d="M600.4 790L0 0H142.2L750.5 790H600.4Z"></path>
+			</svg>
+			<svg class="decoration__shape-2" xmlns="http://www.w3.org/2000/svg" width="266" height="254"
+				viewBox="0 0 266 254" fill="none">
+				<path d="M457.7 405H307.8L-0.000152588 0H149.85L457.7 405Z"></path>
+			</svg>
+		</div>
+	</div>
+	<div class="ps__heroBanner--xlDecoration">
+		<p>Web development &amp; consulting</p>
+	</div>
+	<div class="ps__heroBanner--info">
+		<div class="ps__heroBanner--decorations__circle ps__bounceBottom"></div>
+		<h1>About Us</h1>
+		<div>
+			<span class="ps__arrow-up ps__bounceRight"></span>
+			<p class="ps__breadcrumbs"><a href="/" aria-label="back to the home page">Home</a> / <span
+					class="ps__breadcrumb--last">About</span></p>
+		</div>
+	</div>
+	<div class="ps__heroBanner--smDecoration">
+		<div class="scroll-downs">
+			<div class="mousey">
+				<div class="scroller"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="ps__aboutPage">
+	<div class="ps__aboutPage--description container">
+		<div class="row ps__aboutPage--mainContainer">
+			<div class="col-md-6 col-xs-12 ps__aboutPage--mainDescription">
+				<div class="ps__sectionSmallTitle">
+					<img src="/assets/svgs/sxzar-icon.svg" alt="sxzar icon" width="20" height="20" aria-hidden="true">
+					<p>{{ client.name }}</p>
+				</div>
+				<h1>{{ about.pageTitle }}</h1>
+				{%- for paragraph in about.description_long -%}
+				<p>{{ paragraph | safe }}</p>
+				{%- endfor -%}
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="ps__offerSection--imageContainer" aria-hidden="true">
+					<picture>
+						<source srcset="/assets/images/aboutPage/about.webp" type="image/webp" />
+						<img src="/assets/images/aboutPage/about.jpg" alt="offer section image" decoding="async" />
+					</picture>
+					<div class="ps__offerSection--imageContainer__icon-wrap">
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="512" height="512" x="0" y="0" viewBox="0 0 682.667 682.667"
+							style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+							<g>
+								<defs>
+									<clipPath id="a" clipPathUnits="userSpaceOnUse">
+										<path d="M0 512h512V0H0Z" fill="#ffffff" opacity="1" data-original="#000000"
+											class=""></path>
+									</clipPath>
+								</defs>
+								<g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)">
+									<path
+										d="M0 0h-230.004c-16.568 0-30-13.432-30-30v-422c0-16.568 13.432-30 30-30h300c16.568 0 30 13.432 30 30v351.997z"
+										style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+										transform="translate(336.004 497)" fill="none" stroke="#ffffff"
+										stroke-width="30" stroke-linecap="round" stroke-linejoin="round"
+										stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+										data-original="#000000" opacity="1" class=""></path>
+									<path d="M0 0v-100h100Z"
+										style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+										transform="translate(336 497)" fill="none" stroke="#ffffff" stroke-width="30"
+										stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+										stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1"
+										class=""></path>
+									<path d="m0 0 50 60-50 60"
+										style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+										transform="translate(326 156)" fill="none" stroke="#ffffff" stroke-width="30"
+										stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+										stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1"
+										class=""></path>
+									<path d="m0 0-50 60 50 60"
+										style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+										transform="translate(186 156)" fill="none" stroke="#ffffff" stroke-width="30"
+										stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+										stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1"
+										class=""></path>
+									<path d="m0 0 40 120"
+										style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+										transform="translate(236 156)" fill="none" stroke="#ffffff" stroke-width="30"
+										stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+										stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1"
+										class=""></path>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="ps__offerSection--imageContainer__border-box">
+						{% for i in range(0, 10) %}
+						<div></div>
+						{% endfor %}
+					</div>
+					<div class="ps__offerSection--imageContainer__shape-box">
+						{% for i in range(0, 7) %}
+						<div></div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% include 'containers/ctaSection1.html' %}
+<section class="ps__aboutPage--features">
+	<div class="ps__aboutPage--features__container container">
+		<div class="ps__sectionSmallTitle">
+			<img src="/assets/svgs/sxzar-icon.svg" alt="sxzar icon" width="20" height="20">
+			<p>{{ about.features.subtitle }}</p>
+		</div>
+		<h2>{{ about.features.title }}</h2>
+		<p>{{ about.features.description | safe }}</p>
+		<div class="ps__aboutPage--features__data row">
+			{%- for feature in about.features.data -%}
+			<div class="col-md-4 col-xs-12">
+				<h4>{{ feature.title }}</h4>
+				<p>{{ feature.description }}</p>
+			</div>
+			{%- endfor -%}
+		</div>
+	</div>
+</section>
+{% include 'containers/trustedSection.html' %}
+{% include 'containers/guarantee.html' %}
+{% include 'containers/footerCtaSection.html' %}
+{% endblock %}

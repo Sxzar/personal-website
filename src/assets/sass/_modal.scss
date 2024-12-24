@@ -1,0 +1,194 @@
+.ps__modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .ps__modal--content {
+        background-color: #fff;
+        margin: auto;
+        width: 60%;
+        text-align: center;
+        position: relative;
+        @include max-width(small) {
+            width: 98%;
+        }
+        @include max-width(large) {
+            width: 90%;
+        }
+
+        .ps__modal--close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            z-index: 4;
+        }
+
+        .ps__modal--body {
+            display: flex;
+            position: relative;
+            color: #fff;
+            background-color: $primary;
+            @include max-width(medium) {
+                flex-direction: column;
+            }
+
+            p {
+                margin: 20px 0;
+
+                strong {
+                    color: $secondary;
+                }
+            }
+
+            @include max-width(medium) {
+                .ps__modal--image {
+                    display: none;
+                }
+            }
+
+            & > div {
+                flex: 1;
+            }
+
+            .ps__modal--image {
+                font-size: 0;
+
+                img {
+                    mix-blend-mode: luminosity;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .ps__modal--text {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                .ps__modal--text-wrapper {
+                    background-color: rgba(29, 29, 29, 0.8);
+                    backdrop-filter: blur(10px);
+                    padding: 2rem;
+                    z-index: 2;
+                }
+                @include max-width(medium) {
+                    padding: 2rem 1rem;
+                    .ps__modal--text-wrapper {
+                        padding: 1rem;
+                    }
+                }
+            }
+
+            .ps__modal--decorations {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                overflow: hidden;
+
+                .ps__ctaSection1--shape-box-one {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    animation: bounce-right 1s infinite alternate;
+                    height: clamp(18rem, -390rem + 340vw, 35rem);
+                    width: auto;
+                    path {
+                        fill: #be403f;
+
+                        &:last-child {
+                            fill: #d94645;
+                        }
+                    }
+                }
+
+                .ps__ctaSection1--shape-box-four {
+                    position: absolute;
+                    animation: bounce-left 1s infinite alternate;
+                    height: clamp(18rem, -390rem + 340vw, 35rem);
+                    width: auto;
+                    left: 0;
+                    top: 0;
+                    path {
+                        fill: #be403f;
+
+                        &:last-child {
+                            fill: #d94645;
+                        }
+                    }
+                }
+            }
+        }
+
+        h3 {
+            span {
+                color: $secondary;
+            }
+
+            margin-bottom: 20px;
+        }
+    }
+
+    .ps__modal--close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 3rem;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    .youtube {
+        position: relative;
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-color: #ff0000;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-left: 15px solid #fff;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.ps__modal--show {
+    display: flex;
+}

@@ -1,0 +1,29 @@
+{
+    "title": "Your guide to seamless web development",
+    "subtitle": "Frequently asked questions",
+    "description": "Embark on your journey with us, where clarity and transparency light the path for a smooth and informed experience. Need more guidance? Don't hesitate to reach out - we're here to support you every step of the way.",
+    "image": "puzzle-pieces",
+    "imageAlt": "hands holding puzzle pieces",
+    "faqs": [
+        {
+            "question": "How long does it take to complete a website project?",
+            "answer": "<h3>Typically, our website projects wrap up within about 10 working days.</h3><p>However, timelines can shift depending on the intricacy of the project. Rest assured, we prioritize efficiency while upholding quality, and our devoted team guarantees prompt delivery. For a more accurate estimate tailored to your unique needs, our developer will outline a clear timeline during your initial consultation.</p>"
+        },
+        {
+            "question": "Can I update the content on my website after it's live?",
+            "answer": "<h3>Absolutely!</h3><p>We're all about making it easy for you to keep your website content fresh and up-to-date. Just shoot us a message with any changes you have in mind, and our dedicated developer and designer will handle it promptly. Feeling like giving your site a makeover? You've got the creative reins to switch up its look entirely whenever inspiration strikes—and the best part? It won't cost you a penny extra! Your website grows with your ideas, ensuring it remains current and perfectly reflects your vision.</p>"
+        },
+        {
+            "question": "What steps are involved in the website development process?",
+            "answer": "<h3>Our process involves planning, design, development, testing, and the grand launch.</h3> <p>Every step of the way, we work hand in hand with you, ensuring your vision is brought to life and your goals are achieved.</p>"
+        },
+        {
+            "question": "Do you provide ongoing support after the website is launched?",
+            "answer": "<h3>Yes, we offer ongoing support to address any issues, implement updates, and answer questions.</h3><p>Our goal is to ensure your website remains optimal, secure, and aligned with your evolving needs.</p>"
+        },
+        {
+            "question": "Can you redesign an existing website or just create new ones?",
+            "answer": "<h3>We can do both!</h3><p>We can redesign your existing website to give it a fresh look and feel, or we can create a new website from scratch. Whether you need a fresh look or additional features, our team is here to enhance your online presence.</p>"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+<div class="ps__modal {{ modalClass }}">
+	<div class="ps__modal--content">
+		<span class="ps__modal--close">&times;</span>
+		<div class="ps__modal--body">
+			{% if modalImage %}
+			<div class="ps__modal--image" aria-hidden="true">
+				<picture>
+					<source srcset="
+						/assets/images/{{ modalImage }}.webp
+					" type="image/webp" />
+					<img src="/assets/images/{{ modalImage }}.jpg" alt="{{ modalImageAlt }}" width="500" height="500" />
+				</picture>
+
+			</div>
+			{% endif %}
+			<div class="ps__modal--text">
+				<div class="ps__modal--text-wrapper">
+					{% if modalTitle %}
+					<h4>{{ modalTitle | safe }}</h4>
+					{% endif %} {% if modalDescription %} {{ modalDescription | safe }}
+					{% endif %} {% if modalButtonLink %}
+					<a href="{{ modalButtonLink }}" class="ps__button-5" aria-label="{{ modalButtonText }}" {% if
+						externalLink=='1' %} target="_blank" rel="noopener" {% endif %}>{{ modalButtonText }}</a>
+					{% endif %}
+				</div>
+				<div class="ps__modal--decorations" aria-hidden="true">
+					<svg class="ps__ctaSection1--shape-box-one" xmlns="http://www.w3.org/2000/svg" width="600"
+						height="597" viewBox="0 0 220 219" fill="none">
+						<path d="M98.5501 91.9998L75.0335 109.136L145.728 218.98L179 219L98.5501 91.9998Z"></path>
+						<path d="M164.16 42.9998H109.44L0.000289917 187H53.2803L164.16 42.9998Z"></path>
+						<path d="M179.69 -0.000244141L13.2502 219H52.6702L221.3 -0.000244141H179.69Z"></path>
+					</svg>
+					<svg class="ps__ctaSection1--shape-box-four" xmlns="http://www.w3.org/2000/svg" width="350"
+						height="345" viewBox="0 0 222 219" fill="none">
+						<path d="M122.631 126.63L146.102 109.524L75.5552 -0.11417L42 -5.08002e-05L122.631 126.63Z">
+						</path>
+						<path d="M57.14 175.676H111.86L221.3 31.6757H168.02L57.14 175.676Z"></path>
+						<path d="M41.6101 219L208 0H168L6.10352e-05 219H41.6101Z"></path>
+					</svg>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>

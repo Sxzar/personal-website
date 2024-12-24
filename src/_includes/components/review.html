@@ -1,0 +1,16 @@
+<article class="ps__review">
+	<div class="ps__review--container">
+		<div class="ps__review--details">
+			<div class="ps_review--wrapper">
+				<img src="/assets/images/reviews/{{ review.image }}.jpg" alt="{{ review.author }}" width="70"
+					height="70" aria-hidden="true" />
+				<div>
+					<h4>{{ review.title }}</h4>
+					<span class="ps__review--rating"></span>
+				</div>
+			</div>
+			<p>{{ review.description }}</p>
+			<span class="ps__review--author">{{ review.author }}</span>
+		</div>
+	</div>
+</article>

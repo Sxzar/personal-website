@@ -1,0 +1,52 @@
+{   
+    "title": "packages",
+    "cta" : "Get Started",
+    "call": "Ready to Transform Your Online Success?",
+    "data" : [
+        {
+            "title" : "One-Time Payment Business Package",
+            "price" : 3000,
+            "features": [
+                "5 Page Website",
+                "Cutom code",
+                "Website design by top rated UX/ UI Designer",
+                "Domain name - 1 year",
+                "Hosting - 1 year"
+            ]
+        },
+        {
+            "title" : "Monthly Online Presence Package",
+            "price" : 150,
+            "time" : "per month",
+            "popular" : "Most Popular",
+            "features": [
+                "5 Page Website",
+                "Cutom code",
+                "Website design by top rated UX/ UI Designer",
+                "Domain name",
+                "Hosting",
+                "3 hours of editing / month",
+                "lifetime updates",
+                "24/7 support",
+                "analytics",
+                "help with Google Business Profile"
+            ]
+        },
+        {
+            "title": "Add-On Package",
+            "description": "for One-Time Payment Bussiness Package Owners",
+            "price": 60,
+            "time": "per month",
+            "features": [
+                "domain name continuity",
+                "hosting continuity",
+                "3 hours of editing / month",
+                "lifetime updates",
+                "24/7 support",
+                "analytics",
+                "help with Google Business Profile"
+            ]
+        }
+    ]
+    
+}

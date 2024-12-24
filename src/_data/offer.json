@@ -1,0 +1,58 @@
+{
+    "planning": {
+        "title": "Planning",
+        "description": "We dive deep into <strong>your business</strong>, <strong>preferences</strong>, and <strong>goals</strong>, exploring your industry, <strong>target audience</strong>, and <strong>competitors</strong>. Together, we craft a strategic plan, gathering essential elements like <strong>logos</strong> and <strong>brand guidelines</strong>. Our straightforward approach ensures the seamless creation of <strong>high-quality websites</strong> that not only meet but exceed your expectations. <strong>Your success story</strong> starts here!",
+        "highlights": [
+            {
+                "title": "Zero Upfront Expense",
+                "description": "Launch Your 5-Page Small Business Site at No Cost! For more extensive projects, we offer personalized pricing, factoring in scope, additional pages, and project duration."
+            },
+            {
+                "title": "Complete Ownership",
+                "description": "Your domain, content, code, listings. Cancel anytime with no fees or hassle."
+            }
+        ]
+    },
+    "design": {
+        "title": "Design",
+        "description": "In our design phase, we sculpt <strong>your website's future</strong> with <strong>wireframes</strong>, <strong>mockups</strong>, and <strong>prototypes</strong>. Watch your ideas bloom into a stunning reality - it's the <strong>exciting preview</strong> before the grand reveal. Let's craft your <strong>online</strong> masterpiece together!",
+        "highlights": [
+            {
+                "title": "Unlimited Revisions",
+                "description": "We'll work together until you're thrilled with the result. You have the power to change anything, anytime."
+            },
+            {
+                "title": "Mobile-First Design",
+                "description": "Your site will look great on any device. We'll ensure your site is responsive and mobile-friendly." 
+            }
+        ]
+    },
+    "development": {
+        "title": "Development",
+        "description": " In the development phase, we <strong>code</strong>, <strong>integrate features</strong>, and test functionalities, building your website <strong>from the ground up</strong>. Watch the progress unfold in <strong>real-time</strong> as all the pieces come together seamlessly. The developer will transform your vision into a <strong>fully functional</strong> reality, ensuring each line of code contributes to an exceptional <strong>online presence</strong>.",
+        "highlights": [
+            {
+                "title": "Custom Code",
+                "description": "We'll build your site from scratch, ensuring it's fast, secure, and optimized for search engines."
+            },
+            {
+                "title": "Attain the Perfect 100",
+                "description": "We can reach a Google Page Speed score of 100, significantly improving your search ranking."
+            }
+        ]
+    },
+    "launch": {
+        "title": "Launch",
+        "description": "Once you're thrilled with the <strong>result</strong>, we finalize the journey by <strong>signing the contract</strong> and launching your website to the world. As we hit the <strong>launch button</strong>, your site goes live, becoming readily available for the world to explore. <strong>Congratulations - you're officially online!</strong>",
+        "highlights": [
+            {
+                "title": "Worry-Free Hosting",
+                "description": "You won't be charged separately for hosting. It's already integrated into your monthly payment."
+            },
+            {
+                "title": "Continuous Assistance",
+                "description": "Feel free to connect with us, 24/7. Your direct line to the developer ensures your website is consistently up and running smoothly."
+            }
+        ]
+    }
+}

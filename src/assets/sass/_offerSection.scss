@@ -1,0 +1,250 @@
+.ps__offerSection {
+    & > .row {
+        align-items: center;
+        justify-content: center;
+    }
+    .ps__offerSection--descriptionContainer {
+        padding: 0 1rem;
+        h2 {
+            padding: 0.5rem 0;
+            span {
+                color: $secondary;
+            }
+            text-transform: capitalize;
+            s {
+                font-size: 1.5rem;
+            }
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: #a0a1a6;
+            text-transform: capitalize;
+            .userCountry {
+                color: $secondary;
+            }
+            padding-bottom: 0.5rem;
+        }
+        p {
+            color: #a0a1a6;
+            padding: 0.5rem 0;
+            span {
+                color: $primary;
+                font-weight: 600;
+            }
+        }
+        .ps__offerSection--mainTabBox {
+            margin-top: 1rem;
+            .ps__offerSection--mainTabBox__tabButtons {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                margin-left: 15px;
+                flex-wrap: wrap;
+                cursor: pointer;
+                & > li {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-left: -15px;
+                    flex-wrap: wrap;
+                    margin-top: -1px;
+                    &:nth-child(odd) {
+                        & > span {
+                            background-color: $primary;
+                        }
+                    }
+                    &.active {
+                        & > span {
+                            background-color: $secondary;
+                        }
+                    }
+                    & > span {
+                        color: #ffffff;
+                        padding-left: 35px;
+                        padding-right: 35px;
+                        clip-path: polygon(
+                            94% 0,
+                            100% 50%,
+                            94% 100%,
+                            0% 100%,
+                            6% 49%,
+                            0% 0%
+                        );
+                        text-align: center;
+                        text-transform: capitalize;
+                        transition: all 0.5s linear;
+                        overflow: hidden;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        background-color: $accent1;
+                    }
+                }
+            }
+            .ps__offerSection--mainTabBox__tabContent {
+                & > div {
+                    display: none;
+                    min-height: 300px;
+                    strong {
+                        color: $primary;
+                    }
+                    .ps__step--points {
+                        margin-top: 1rem;
+                        opacity: 1;
+                        & > div {
+                            h4 {
+                                display: flex;
+                                align-items: center;
+
+                                &::before {
+                                    content: '';
+                                    display: inline-block;
+                                    width: 2rem;
+                                    height: 2rem;
+                                    background: url('/assets/svgs/checkmark.svg')
+                                        no-repeat center center;
+                                    background-size: contain;
+                                    padding-right: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ps__offerSection--imageContainer {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        max-width: 450px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+        background-blend-mode: luminosity;
+        @include max-width(small) {
+            max-width: 230px;
+        }
+        @include max-width(large) {
+            margin-bottom: 4rem;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .ps__offerSection--imageContainer__icon-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: -20px;
+            bottom: -20px;
+            width: 120px;
+            height: 120px;
+            background-color: $primary;
+            @include max-width(small) {
+                width: 60px;
+                height: 60px;
+            }
+            svg {
+                width: 65px;
+                height: auto;
+                animation: bounce-bottom 1s infinite alternate;
+                @include max-width(small) {
+                    width: 30px;
+                }
+            }
+        }
+        .ps__offerSection--imageContainer__border-box {
+            & > div {
+                width: 100%;
+                height: 100%;
+                border: 1px solid var(--noile-primary, #1d1d1d);
+                position: absolute;
+                z-index: -1;
+                @for $i from 1 through 5 {
+                    &:nth-child(#{$i}) {
+                        top: $i * 10px;
+                        left: -$i * 10px;
+                    }
+                }
+                @for $i from 6 through 10 {
+                    &:nth-child(#{$i}) {
+                        top: -($i - 5) * 10px;
+                        right: -($i - 5) * 10px;
+                    }
+                }
+            }
+        }
+        .ps__offerSection--imageContainer__shape-box {
+            & > div {
+                &:nth-child(1) {
+                    width: 30px;
+                    height: 30px;
+                    background-color: $secondary;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+                &:nth-child(2) {
+                    width: 20px;
+                    height: 20px;
+                    background-color: $primary;
+                    position: absolute;
+                    right: -20px;
+                    bottom: -20px;
+                    animation: rotate 8s infinite linear;
+                }
+                &:nth-child(3) {
+                    width: 20px;
+                    height: 20px;
+                    background-color: $primary;
+                    position: absolute;
+                    right: -40px;
+                    bottom: -40px;
+                    animation: rotate 8s infinite linear;
+                }
+                &:nth-child(4) {
+                    width: 10px;
+                    height: 10px;
+                    background-color: $primary;
+                    position: absolute;
+                    right: -50px;
+                    bottom: -50px;
+                    animation: rotate 8s infinite linear;
+                }
+                &:nth-child(5) {
+                    width: 30px;
+                    height: 30px;
+                    background-color: $secondary;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &:nth-child(6) {
+                    width: 30px;
+                    height: 30px;
+                    background-color: $primary;
+                    position: absolute;
+                    top: -50px;
+                    left: -30px;
+                    animation: rectMove 8s linear 0s infinite;
+                }
+                &:nth-child(7) {
+                    width: 20px;
+                    height: 20px;
+                    background-color: $secondary;
+                    position: absolute;
+                    top: -20px;
+                    left: -50px;
+                    animation: rectMove 8s linear 2s infinite;
+                }
+            }
+        }
+    }
+}

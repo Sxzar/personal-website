@@ -1,0 +1,24 @@
+<section class="ps__trustedBy">
+	<h2>{{ trusted.title }}</h2>
+	<div class="ps__trustedBy__logos">
+		{% for row in trusted.rows %}
+		<div
+			class="ps__trustedBy__logos--row {% if loop.index % 2 === 0 %}ps__infiniteScroll--right{% else %}ps__infiniteScroll--left{% endif %}">
+			<div class="{% if loop.index % 2 === 0 %}scroll-disabler-right{% else %}scroll-disabler{% endif %}"></div>
+			{% for entry in row %}
+			<article>
+				<a href="{{ entry.url }}">
+					<img src="/assets/images/trusted/{{ entry.logo }}" alt="" width="200" height="50"
+						aria-hiden="true" />
+				</a>
+			</article>
+			{% endfor %}
+		</div>
+		{% endfor %}
+	</div>
+	<div class="text-center">
+		<a href="/#packages" class="ps__button-2" aria-label="check out our packages">
+			View Packages
+		</a>
+	</div>
+</section>

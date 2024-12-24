@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Portfolio Website - Bianca A",
+        "date": "2023",
+        "image": "bianca",
+        "image_alt": "Bianca's Portfolio Website mockup",
+        "url": "https://bianca-a.com"
+    },
+    {
+        "title": "Gaming Deals - Level Up Loot ",
+        "date": "2023",
+        "image": "level-up-loot",
+        "image_alt": "Level Up Loot website mockup",
+        "url": "https://leveluploot.online"
+    },
+    {
+        "title": "Presentation Website - GPT3",
+        "date": "2023",
+        "image": "gpt3",
+        "image_alt": "GPT3 website mockup",
+        "url": "https://gpt3-build.netlify.app/"
+    }
+]

@@ -1,0 +1,57 @@
+<footer class="ps__footer">
+    <div class="ps__footer--container container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="ps__footer--logo">
+                    <a href="/" class="ps__logo-container" aria-label="back to home">
+                        <span class="ps__logo" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="ps__footer--description">
+                    <p>{{ footer.description | safe }}</p>
+                </div>
+                <div class="ps__footer--socials">
+
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                {% set navPages = collections.all | eleventyNavigation %}
+                <h4>Navigation</h4>
+                <nav role="navigation" aria-label="footer navigation">
+                    <ul>
+                        {%- for entry in navPages %}
+                        <li>
+                            <a {% if entry.url %} href="{{ entry.url }}" {% endif %}> {{ entry.title }} </a>
+                        </li>
+                        {%- endfor -%}
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <h4>Services</h4>
+                <ul>
+                    {%- for entry in footer.services -%}
+                    <li>
+                        {{ entry.name }}
+                    </li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        </div>
+        <div class="ps__footer--bottom">
+            <p>&copy; Copyright <span class="ps__footer--bottom__client">{{ client.name }}</span> <span
+                    id="footer-year"></span>. All rights reserved.</p>
+        </div>
+        <svg class="ps__footer--shape" xmlns="http://www.w3.org/2000/svg" width="793" height="603" viewBox="0 0 793 603"
+            fill="none" aria-hidden="true">
+            <path d="M439.616 429.192L371.826 517.348L522.077 753L642.277 752.592L439.616 429.192Z" fill="white"
+                fill-opacity="0.03"></path>
+            <path d="M525.762 124.819H392.029L6.10352e-05 639.4L136.094 636.454L525.762 124.819Z" fill="white"
+                fill-opacity="0.03"></path>
+            <path d="M643.674 -30L47.6423 752.592H190.928L792.726 -30H643.674Z" fill="#282828"></path>
+        </svg>
+    </div>
+</footer>
+<script>
+    document.getElementById('footer-year').innerText = new Date().getFullYear();
+</script>

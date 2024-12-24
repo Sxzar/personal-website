@@ -1,0 +1,57 @@
+<div class="ps__contactPage--form">
+    <form
+        name="contact"
+        method="POST"
+        action="thankyou.html"
+        data-netlify-recaptcha="true"
+        data-netlify="true"
+        netlify
+    >
+        <fieldset>
+            <legend>{{ contactPage.legend | safe }}</legend>
+            <label for="f-name">Your Name:</label>
+            <input
+                type="text"
+                name="name"
+                id="f-name"
+                placeholder="e.g. John Doe"
+                required
+                oninvalid="this.setCustomValidity('Please, enter your name.')"
+                onchange="this.setCustomValidity('')"
+                autocomplete="name"
+            />
+
+            <label for="f-email">Your Email: </label>
+            <input
+                type="email"
+                name="email"
+                id="f-email"
+                placeholder="e.g. johndoe@email.com"
+                required
+                oninvalid="this.setCustomValidity('Please, enter a valid email address.')"
+                onchange="this.setCustomValidity('')"
+                autocomplete="email"
+            />
+
+            <label for="f-message">Message: </label>
+            <textarea
+                name="message"
+                id="f-message"
+                placeholder="Tell me more about your project&hellip;"
+                rows="5"
+                required
+                oninvalid="this.setCustomValidity('Please, describe your project.')"
+                onchange="this.setCustomValidity('')"
+                aria-label="Describe what would you like your website to be like."
+            ></textarea>
+            <div data-netlify-recaptcha="true"></div>
+            <button
+                type="submit"
+                class="ps__button-5"
+                aria-labelledby="send"
+            >
+                Send
+            </button>
+        </fieldset>
+    </form>
+</div>

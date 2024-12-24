@@ -1,0 +1,23 @@
+---
+permalink: "/sxzar.xml"
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>Sxzar</title>
+    <description>Unlock valuable knowledge on all things internet with our curated collection of blog posts. From SEO fundamentals to website optimization, empower yourself with essential insights tailored for business success online.</description>
+    <link>https://{{ client.shortDomain }}/feed/</link>
+    <atom:link href="https://yourwebsite.com/rss.xml" rel="self" type="application/rss+xml" />
+    {% for post in collections.resources | reverse %}
+    <item>
+        <enclosure url="https://{{ client.shortDomain }}{{ post.data.image }}" type="image/jpeg" />
+        <title>{{ post.data.title }}</title>
+        <description>{{ post.data.description }}</description>
+        <link>https://{{ client.shortDomain }}{{ post.url }}</link>
+        <guid isPermaLink="true">https://{{ client.shortDomain }}{{ post.url }}</guid>
+        <pubDate>{{ post.data.date | dateToRfc3339 }}</pubDate>
+    </item>
+    {% endfor %}
+</channel>
+</rss>

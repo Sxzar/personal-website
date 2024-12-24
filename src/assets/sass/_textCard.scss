@@ -1,0 +1,69 @@
+.ps__textCard {
+	flex: 1;
+	margin: 1rem;
+	padding: 0;
+	border: 1px solid $primary;
+	max-width: 315px;
+	min-width: 295px;
+	background-color: #ffffff;
+	-webkit-mask: conic-gradient(
+				from 180deg at top 1px right 1px,
+				#0000 90deg,
+				#000 0
+			)
+			var(--_i, 200%) 0 /200% var(--_i, 1px) border-box no-repeat,
+		conic-gradient(at bottom 1px left 1px, #0000 90deg, #000 0) 0
+			var(--_i, 200%) / var(--_i, 1px) 200% border-box no-repeat,
+		linear-gradient(#000 0 0) padding-box no-repeat;
+	transition: 0.3s, -webkit-mask-position 0.3s 0.3s;
+	&:hover {
+		--_i: 100%;
+		transition: 0.3s, -webkit-mask-size 0.3s 0.3s;
+		h3 {
+			background-color: $primary;
+			color: $text-light;
+		}
+	}
+	.ps__textCard--container {
+		padding: 1rem;
+		border: 1px solid $accent5;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+	}
+	img {
+		width: 150px;
+		height: 150px;
+		margin: 1rem auto;
+	}
+	h3 {
+		font-size: 0.8rem;
+		text-wrap: nowrap;
+		background-color: $accent5;
+		color: $primary;
+		width: fit-content;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-weight: 400;
+		transition: all 0.3s ease-in-out;
+		margin: 0 auto;
+	}
+	p {
+		margin: 1rem 0;
+		line-height: 1.875;
+	}
+	.ps__button-5 {
+		background-color: $accent5;
+		color: $primary;
+		&::before,
+		&::after {
+			border-bottom: 80px solid $primary;
+		}
+		&:hover {
+			color: $text-light;
+		}
+	}
+}

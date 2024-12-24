@@ -1,0 +1,17 @@
+{
+    "title" : "Create Your Website with a Pro Developer",
+    "subtitle" : "No page builders or WordPress. Hand-coded websites. Superior results. Starting at $150/month.",
+    "image": "hero.png",
+    "features": [
+        "Hosting Fees Included",
+        "24/7 customer support",
+        "Custom Designs",
+        "Lifetime updates"
+    ],
+    "sideBanner" : "Web development &amp; consulting",
+    "cta": "Free Consultation",
+    "ctaUrl": "https://calendly.com/sxzar/30min",
+    "ariaLabel": {
+        "cta": "Schedule a Free Consultation (Opens in a new window)"
+    }
+}

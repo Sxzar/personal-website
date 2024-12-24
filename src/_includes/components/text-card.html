@@ -1,0 +1,14 @@
+<section class="ps__textCard">
+	<div class="ps__textCard--container">
+		<h3>{{ title }}</h3>
+		<picture>
+			<img src="{{ image }}" alt="{{ title }}" decoding="async" />
+		</picture>
+		<p>{{ description | safe }}</p>
+		<div>
+			<a href="{{ url }}" class="ps__button-5" aria-label="{{ title }}">
+				Read More
+			</a>
+		</div>
+	</div>
+</section>

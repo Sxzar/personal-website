@@ -1,0 +1,38 @@
+{
+    "description": "Still unsure? Let's chat! Discover how our custom-coded websites can elevate your online presence. No obligations, just a conversation to explore your possibilities. Reach out today!",
+    "socials": [
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/yourcompany"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/yourcompany"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/company/yourcompany"
+        },
+        {
+            "name": "Github",
+            "url": "https://www.github.com/"
+        }
+    ],
+    "services": [
+        {
+            "name": "Web Design"
+        },
+        {
+            "name": "Website Maintenance"
+        },
+        {
+            "name": "Search Engine Optimization"
+        },
+        {
+            "name": "Content Creation"
+        },
+        {
+            "name": "Logo Design"
+        }
+    ]
+}
