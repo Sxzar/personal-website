@@ -1,11 +1,3 @@
-# SXZAR Web Designs [![Netlify Status](https://api.netlify.com/api/v1/badges/59e3e020-ce17-4aec-a599-97111a56dac0/deploy-status)](https://app.netlify.com/sites/sxzarr/deploys)
-
-
-
-![OG Image](https://sxzar.com/assets/images/og-image.jpg)
-
-Welcome to SXZAR Web Designs! This project is a personal website offering professional web development services. It utilizes an Eleventy setup with Nunjucks templating and integrates Decap CMS, providing an easy way to manage a blog section.
-
 ## Overview
 ![js](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
